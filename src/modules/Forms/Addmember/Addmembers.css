@@ -1,0 +1,284 @@
+.form {
+    background-color: #fff;
+    display: flex;
+    padding-bottom: 241px;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+  }
+  
+  @media (max-width: 991px) {
+    .form {
+      padding-bottom: 100px;
+    }
+  }
+  
+  .header {
+    background-color: #7659ff;
+    align-self: stretch;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 6px 62px 15px;
+    font: 900 24px Gothic A1, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .header {
+      max-width: 100%;
+      white-space: initial;
+      padding: 0 20px;
+    }
+  }
+  
+  .header .logo {
+    aspect-ratio: 3.45;
+    object-fit: contain;
+    object-position: center;
+    width: 210px;
+    max-width: 100%;
+  }
+  
+  .navItems {
+    display: flex;
+    gap: 18px;
+    margin: auto 0;
+  }
+  
+  @media (max-width: 991px) {
+    .navItems {
+      white-space: initial;
+    }
+  }
+  
+  .header .navIcon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 24px;
+  }
+  
+  .header .title {
+    display: flex;
+    margin-top: 102px;
+    width: 435px;
+    max-width: 100%;
+    gap: 24px;
+    color: #7659ff;
+    text-align: center;
+    font: 900 48px Gothic A1, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .header .title {
+      margin-top: 40px;
+      font-size: 40px;
+    }
+  }
+  
+  .titleIcon {
+    aspect-ratio: 1.54;
+    object-fit: contain;
+    object-position: center;
+    width: 71px;
+    margin: auto 0;
+  }
+  
+  .titleText {
+    flex-grow: 1;
+    width: 326px;
+    flex-basis: auto;
+    font-size: 40px;
+  }
+  
+  @media (max-width: 991px) {
+    .titleText {
+      font-size: 40px;
+    }
+  }
+  
+  .formSection {
+    margin-top: 38px;
+    width: 80%;
+    max-width: 1226px;
+  }
+  
+  @media (max-width: 991px) {
+    .formSection {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  .formRow {
+    gap: 20px;
+    display: flex;
+  
+  }
+  
+  @media (max-width: 991px) {
+    .formRow {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  
+  .formColumn {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    margin-left: 0px;
+  }
+  
+  @media (max-width: 991px) {
+    .formColumn {
+      width: 100%;
+    }
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    color: #636262;
+    white-space: nowrap;
+    text-align: center;
+    font: 700 31px Gothic A1, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .formGroup {
+      max-width: 100%;
+      margin-top: 40px;
+      white-space: initial;
+    }
+  }
+  
+  .formLabel {
+    align-self: start;
+    margin-left: 54px;
+    font-size: 20px;
+  }
+  
+  @media (max-width: 991px) {
+    .formLabel {
+      margin-left: 10px;
+    }
+  }
+  
+  .formInput {
+    border-radius: 15px;
+    background-color: #ededed;
+    display: flex;
+    margin-top: 5px;
+    height: 62px;
+  }
+  
+  @media (max-width: 991px) {
+    .formInput {
+      max-width: 100%;
+    }
+  }
+  
+  .uploadSection {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    font-family: Gothic A1, sans-serif;
+    text-align: center;
+  }
+  
+  @media (max-width: 991px) {
+    .uploadSection {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  .uploadLabel {
+    color: #636262;
+    font-size: 20px;
+    font-weight: 700;
+    align-self: start;
+    margin-left: 52px;
+  }
+  
+  @media (max-width: 991px) {
+    .uploadLabel {
+      margin-left: 10px;
+    }
+  }
+  
+  .uploadButton {
+    border-radius: 15px;
+    background-color: #ededed;
+    font-size: 20px;
+    color: #000;
+    font-weight: 300;
+    padding: 23px 70px;
+    height: 62px;
+  
+  }
+  
+  @media (max-width: 991px) {
+    .uploadButton {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  
+  .submitButton {
+    border-radius: 40px;
+    background-color: #ffc549;
+    margin-top: 65px;
+    width: 240px;
+    max-width: 100%;
+    color: #4e4d4d;
+    white-space: nowrap;
+    height: 52px;
+  }
+  
+  .formSection2 {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    flex-direction: column;
+    /* Stack items vertically if needed */
+    margin-bottom: 20px;
+  }
+  
+  .textAreaInput {
+    height: 200px;
+    /* Adjust the height */
+    width: 100%;
+    /* Full width */
+  }
+  
+  .uploadPhotoWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    /* Adjust as per your requirement */
+  }

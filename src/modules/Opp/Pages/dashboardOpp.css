@@ -1,0 +1,5 @@
+.opp-container {
+    display:flex;
+    justify-content:space-start;
+    gap:3em;
+}

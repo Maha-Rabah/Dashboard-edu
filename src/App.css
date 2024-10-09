@@ -1,0 +1,96 @@
+  /* start global rules  */
+
+  :root{
+    --main-color:#7659FF;
+    --section-color: #EBEBEB80;
+    --second-color:#FFc549;
+    --third-color:#FF77B4;
+    --sec-color:#79BFFB;
+    --font-color:#FFFFFF;
+    --main-padding: 50px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-size: 44px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color:var(--main-color);
+    color:white;
+    width: fit-content;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+@media (max-width:767px) {
+    .button{
+        font-weight: bold !important;
+    }
+}
+.container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+    /* Small  */
+
+@media (min-width:768px) {
+    .container{
+        width: 750px;
+    }
+}
+
+    /* Medium  */
+
+@media (min-width:992px) {
+    .container{
+        width: 970px;
+    }
+}
+
+    /* Large  */
+    
+@media (min-width:1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+

@@ -1,0 +1,175 @@
+.add-btn-container {
+  display:flex;
+  justify-content:flex-start;
+}
+
+.add-btn {
+  padding:0.7em 1em;
+  background-color:var(--main-color);
+  color:#fff;
+  border:none; 
+  display:flex;
+  align-items:center;
+  gap:0.5em; 
+  cursor:pointer; 
+  margin-bottom:1em;
+  font-size:0.9em;
+  border-radius:5px;
+  animation-name:buttonAppear;
+  animation-duration:0.5s;
+}
+
+@keyframes buttonAppear {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+
+.add-btn:hover {
+  opacity:0.92;
+}
+
+
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--main-color);
+    font-size:0.9em;
+    font-weight:bold;
+    animation-name:appear;
+    animation-duration:0.5s;
+  }
+
+  
+  .custom-table th, .custom-table td {
+    padding: 0.8em 0.75em;
+    text-align: center;
+  }
+  
+  .custom-table th {
+    background-color: #bababa;
+  }
+  
+  .custom-table td {
+    border-top: 1px solid var(--main-color);
+  }
+  
+  .custom-table tr td:nth-child(n+1):nth-child(-n+6) {
+    border-left: none;
+    border-right: none;
+  }
+  
+  .first-row {
+    background-color:#fff;
+  }
+
+  .second-row {
+    background-color:#fff;
+  }
+
+  .second-row td {
+    width:100%;
+    text-align:left;
+  }
+
+  
+  /* Remove the top border for job description row */
+
+  .no-border td {
+    border-top: none;
+  }
+
+
+  .second-row td p{
+    line-height:1.35;
+    width:90%
+  }
+
+  .desc-container {
+    display:flex;
+    gap:1em;
+  }
+
+  .desc-container img{
+    align-self:flex-start;
+  }
+  
+  .edit-btn,
+  .delete-btn {
+    background-color:#fff;
+    border: none;
+    margin-right:15px;
+    cursor: pointer;
+  }
+
+  .edit-btn img,
+  .delete-btn img {
+    width:20px
+  }
+    
+  .delete-btn:hover,
+  .edit-btn:hover {
+    opacity: 0.65;
+  }
+
+  .profile-img {
+    width:42px;
+  }
+
+  .dashboard-job-desc {
+    width:100%;
+    display:flex;
+    justify-content:right;
+  }
+
+  .dashboard-job-desc a {
+    color:var(--main-color);
+    display:flex;
+    align-items:center;
+    padding:3px 5px;
+  }
+
+  .yellow-arrow {
+    color: var(--second-color);
+    font-size:1.2em;
+  }
+.icon-in-head {
+  display:flex;
+  gap:0.5em;
+}
+
+.epi-img {
+  width:100px;
+  height:50px;
+  object-fit:contain;
+}
+
+.link-row {
+  font-size:0.85em;
+  font-weight:normal;
+}
+
+.link-row a {
+  color:#000;
+  padding-bottom:1px;
+  border-bottom:0.5px solid #000;
+}
+
+.blog-content-container {
+  width:100%;
+  display:flex;
+  align-items:flex-start;
+  justify-content:flex-start;
+  gap:1em;
+}
+
+.blog-content {
+  overflow: hidden; /* cuts the title if its too long*/
+  display: -webkit-box;
+  -webkit-line-clamp: 1;  /* if title is longer than 2 lines clamp it*/
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}

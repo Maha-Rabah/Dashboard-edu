@@ -1,0 +1,43 @@
+.position-container {
+    padding:0.5em 2em;
+    width:100%;
+}
+
+.position-header {
+    color:var(--main-color);
+    margin-bottom:0.3em;   
+    font-size:1.3em;
+}
+
+.position-info {
+    background-color: #DCD9D9;
+    padding:0.5em 0.5em;
+    line-height:1.4;
+    font-weight:bold;
+    border-radius:3px;
+}
+
+.position-info ul {
+    list-style:unset;
+    padding-left:1em;
+}
+
+.position-info ul li {
+    padding:0.2em 0;
+}
+
+.job-submit {
+    width:90%;
+    display:flex;
+    justify-content:center;
+    padding:2em 0em;
+}
+
+.job-submit-btn {
+    color:#4E4D4D;
+    padding:1.2em 5em;
+    background-color:var(--second-color);
+    border-radius:50px;
+    font-size:1.1em;
+    font-weight:bold;
+}

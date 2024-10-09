@@ -1,0 +1,97 @@
+.dashboard-container {
+    padding: 2em 2em;
+    background-color:#fff;
+}
+
+.dashboard-hero {
+    /* display:flex;
+    width:100%;
+    justify-content:space-around;
+    flex-wrap:wrap; */
+}
+
+.edubridge-in-number {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    flex:0.6;
+    animation-name:appear;
+    animation-duration:0.5s;
+}
+
+@keyframes appear {
+    from {
+        opacity:0;
+        transform:scale(0.92);
+    }
+    to {
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+.number-title {
+    font-size:3em;
+}
+
+.numbers-container{
+    font-size:1.4em;
+    display:flex;
+    align-items:center;
+}
+
+.numbers-calender {
+    margin-right:15px;
+}
+
+.dateline {
+    font-size:1.3em;
+    font-weight:700;
+    margin:1em 0;
+}
+
+.day {
+    color: var(--main-color);
+}
+
+.date {
+    color:#CBCBCB;
+}
+
+.person-container {
+    width:65%;
+
+}
+
+.charts {
+    display:flex;
+    justify-content:space-between;
+    margin:2em 4em 2em 0em;
+    flex-wrap:wrap;
+    gap:1em;
+}
+
+
+
+.dashboard-header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:50px;
+    margin:3em 0 1em 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .dashboard-container {
+        padding: 1em 1em;
+        
+    }
+    
+}
+
+
+
+.Mycontainer{
+    display: flex;
+    justify-content: center;
+}

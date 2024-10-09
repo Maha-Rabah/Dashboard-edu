@@ -1,0 +1,86 @@
+.dashboard-login {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+.dashboard-login-container {
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    z-index:44;
+    background-image:url('../assets/edu_background.svg');
+    background-repeat:no-repeat;
+    background-position:center; 
+    margin-top:100px
+}
+
+.dashboard-login-title {
+    color:var(--main-color);
+    font-size:3.5em;
+    text-align:center;
+    margin-top:0.2em;
+    letter-spacing:1px;
+    font-weight:bolder;
+}
+
+
+.dashboard-login-input-container {
+    display:flex;
+    flex-direction:column;
+    margin-top:3em;
+    align-items:center;
+
+}
+
+.dashboard-input-label-container {
+    min-width:400px;
+    display:flex;
+    flex-direction:column;
+    gap:0.7em;
+    margin-bottom:2em;
+}
+
+.dashboard-login-input-container label {
+    display:block;
+    font-size:1.3em;
+    font-weight:bold;
+    color:var(--main-color);
+    margin-left:2.5em;
+}
+
+.dashboard-login-input-container input {
+    border-radius:10px;
+    width:100%;
+    padding:0.5em;
+    font-size:1.2em;
+    background-color:#D9D9D9;
+    border:none;
+    margin-left:2.5em;
+
+}
+
+.dashboard-login-submit {
+    display:flex;
+    justify-content:center;
+}
+
+
+.dashboard-login-submit-btn {
+    color:#fff;
+    background-color:var(--main-color);
+    font-size:1.2em;
+    padding:0.5em 2em;
+    border-radius:10px;
+    margin-top:2em;
+    border:none;
+    cursor:pointer;
+    box-shadow:2px 2px 2px #555;
+}
+
+@media (max-width:728px) {
+    .dashboard-login-container {
+        width: 80%;
+    }
+}

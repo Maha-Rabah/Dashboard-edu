@@ -1,0 +1,6 @@
+.stats-container {
+    display:flex;
+    justify-content:flex-start;
+    gap:3em;
+    flex-wrap:wrap;
+}

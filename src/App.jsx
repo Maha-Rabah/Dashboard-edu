@@ -1,15 +1,14 @@
-import './App.css'
-import Dashboard from './pages/Dashboard'
-import DashboardLogin from '../src/components/Login/pages/DashboardLogin'
+import "./App.css";
+import Dashboard from "./pages/Dashboard";
+import DashboardLogin from "../src/components/Login/pages/DashboardLogin";
 
 function App() {
-
   return (
     <>
-        <DashboardLogin/>
-        {/* <Dashboard/> */}
+      <DashboardLogin />
+      {/* <Dashboard/> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;

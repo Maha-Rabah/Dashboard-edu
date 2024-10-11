@@ -29,7 +29,7 @@ const DashboardTeam = () => {
     <>
     <div className="dashboard-container">
     <div className="add-btn-container">
-        <Link to={"/addmembersform"}><button className='add-btn'>Add Member</button></Link>
+        <Link to='/dashboard/addmembersform'><button className='add-btn'>Add Member</button></Link>
     </div>
       <div className="team-container">
          <table className="custom-table">
@@ -46,11 +46,13 @@ const DashboardTeam = () => {
               {
           teamdata.map((row, index) => (
         <>
+        <tbody>
           <tr className='first-row'>
             <td><img src={row.image} className='profile-img'/></td>
             <td style={{color:'gray'}} key={row.id}>{row.No}.</td>
             <td>{row.name}</td>
             <td>{row.position}</td>
+            <td>{row.team}</td>
             <td>{row.email}</td>
             <td>{row.phone}</td>
             <td>
@@ -66,6 +68,7 @@ const DashboardTeam = () => {
               </div>
             </td>
           </tr>
+          </tbody>
         </>
          ))}
          </table>

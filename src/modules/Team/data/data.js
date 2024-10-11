@@ -1,3 +1,3 @@
  export const teamColumns = [
-    "","No.", "Name","Position", "Email", "Phone Number", "Actions"
+    "","No.", "Name","Position", "Team","Email", "Phone Number", "Actions"
   ]

@@ -5,7 +5,7 @@ import { routes } from "./router/Allrouter";
 import "./index.css";
 
 const router = createBrowserRouter(routes, {
-  basename: "/dash-edu",
+  // basename: "/dash-edu",
 });
 
 ReactDOM.createRoot(document.getElementById("root")).render(

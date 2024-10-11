@@ -4,6 +4,7 @@ import '../Addmember/Addmembers.css';
 import FormInput from '../Addmember/FormInput';
 import Members from '../assets/member.png'
 import axiosInstance from '../../../utlis/axios';
+import axios from 'axios';
 
 
 function AddMembersForm() {
@@ -37,30 +38,28 @@ function AddMembersForm() {
    }
    
    try {
-     const response = await axiosInstance.post(
+   const formdata = new FormData({
+    name: data.name,
+    position: data.position,
+    team: data.team,
+    email:data.email,
+    phone:data.phone,
+    information:data.information,
+    file:data.photo
+   })
+     axios.post(
        url,
-       {
-        name: data.name,
-        position: data.position,
-        email:data.email,
-        phone:data.phone,
-        information:data.information,
-        photo:data.photo,
-       },
+   formdata,
        {
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "multipart/form-data",
           Authorization: `Bearer ${authenticationToken}`,
         },
        },
      );
 
-     if (response.ok) {
       console.log("Data added successfully");
-    } else {
-      console.error("Error adding data:", response);
-    }
-   } catch (error) {
+    } catch (error) {
      console.error('error', error);
    }
  };
@@ -82,6 +81,8 @@ function AddMembersForm() {
           <FormInput label="Name" value={data.name} onChange={(e)=>
             handle(e)}/>
           <FormInput label="Position" value={data.position} onChange={(e)=>
+            handle(e)}/>
+          <FormInput label="Team" value={data.team} onChange={(e)=>
             handle(e)}/>
         </div>
       </section>

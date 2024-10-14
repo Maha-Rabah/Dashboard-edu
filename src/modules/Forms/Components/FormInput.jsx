@@ -1,4 +1,4 @@
-import "../Addmember/Pages/AddMembers.css";
+// import "../Addmember/Pages/AddMembers.css";
 
 function FormInput({ label, type = "text", onChange }) {
   const handleChange = (e) => {

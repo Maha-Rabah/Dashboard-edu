@@ -1,17 +1,18 @@
 import "./dashboardLogin.css";
 import { useState } from "react";
-import eduBackground from "../assets/edu_background.svg";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const DashboardLogin = () => {
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    try {
+    try 
+    {
       const response = await axios.post(
         "https://api.edu-bridge.org.uk/auth/signin",
         {
@@ -19,11 +20,12 @@ const DashboardLogin = () => {
           password: password,
         }
       );
-
       localStorage.setItem("token", response.data.token);
-      console.log( response.data.token)
       navigate("/dashboard");
-    } catch (error) {
+    } 
+
+    catch (error) 
+    {
       console.error("ERROR IN LOGIN", error);
     }
   };
@@ -34,8 +36,8 @@ const DashboardLogin = () => {
         <h1 className="dashboard-login-title">Login</h1>
         <form
           onSubmit={handleLogin}
-          className="dashboard-login-input-container"
-        >
+          className="dashboard-login-input-container">
+
           <div className="dashboard-input-label-container">
             <label htmlFor="email">Email</label>
             <input
@@ -59,11 +61,13 @@ const DashboardLogin = () => {
               required
             />
           </div>
+
           <div className="dashboard-login-submit">
             <button type="submit" className="dashboard-login-submit-btn">
               Login
             </button>
           </div>
+          
         </form>
       </div>
     </div>

@@ -6,8 +6,8 @@ const Dashboard = () => {
   return (
     <>
       <div className="Mycontainer">
-        <Sidebar />
-        <Outlet />
+            <Sidebar />
+            <Outlet />
       </div>
     </>
   );

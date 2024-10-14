@@ -6,7 +6,7 @@ import Dashboard from "../pages/Dashboard";
 import { DashboardStatsRoute } from "../modules/Stats/router/DashboardStatsRoute";
 import Home from "../components/Home/Home";
 import { DashboardBlogRoute } from "../modules/Blog/router/DashboardBlogRoute";
-import {DashboardFormRoute} from "../modules/Forms/router/DashboardFormRoute"
+import {DashboardFormEpisodeRoute, DashboardFormStatisticsRoute, DashboardFormTeamRoute} from "../modules/Forms/router/DashboardFormRoute"
 
 
 export const routes = [
@@ -26,8 +26,11 @@ export const routes = [
       ...DashboardTeamRoute,
       ...DashboardEpiRoute,
       ...DashboardStatsRoute,
-      ...DashboardFormRoute,
       ...DashboardBlogRoute,
+      ...DashboardFormTeamRoute,
+      ...DashboardFormEpisodeRoute,
+      ...DashboardFormStatisticsRoute,
+
     ],
   },
 ];

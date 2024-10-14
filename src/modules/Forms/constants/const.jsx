@@ -1,3 +1,5 @@
 export const ROUTES = {    
-    AddMembersForm:'addmembersform'
+    AddMembersForm:'addmembersform',
+    AddEpisodesForm:'addepisodesform',
+    AddStatisticsForm: 'addstatisticsform'
 }

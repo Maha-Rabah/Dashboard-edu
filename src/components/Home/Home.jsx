@@ -29,20 +29,20 @@ const Home = () => {
         
   return (
     <div>
-         <div className='dashboard-container'>
+        <div className='dashboard-container'>
           <div className="dashboard-hero">
-        <div className="edubridge-in-number">
-          <h1 className='number-title'>EduBridge in Numbers</h1>
-          <div className="numbers-container">
-            <img className='numbers-calender' src={calender} alt="" />
-            <p className='dateline'>
-              <span className='day'>{day},</span>
-              <span className='date'>{currentDate}</span>
-            </p>
+            <div className="edubridge-in-number">
+              <h1 className='number-title'>EduBridge in Numbers</h1>
+              <div className="numbers-container">
+                  <img className='numbers-calender' src={calender} alt="" />
+                  <p className='dateline'>
+                    <span className='day'>{day},</span>
+                    <span className='date'>{currentDate}</span>
+                  </p>
+              </div>
+              <img className='person-container' src={person} alt="" />
+            </div>
           </div>
-          <img className='person-container' src={person} alt="" />
-        </div>
-        </div>
         </div>
     </div>
   )

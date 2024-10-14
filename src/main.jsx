@@ -4,9 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { routes } from "./router/Allrouter";
 import "./index.css";
 
-const router = createBrowserRouter(routes, {
-  // basename: "/dash-edu",
-});
+const router = createBrowserRouter(routes);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

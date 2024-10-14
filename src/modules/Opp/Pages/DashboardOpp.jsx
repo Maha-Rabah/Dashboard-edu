@@ -1,5 +1,4 @@
 import React from 'react'
-import Table from '../../../components/Table/Table'
 import './dashboardOpp.css'
 
 const DashboardOpp = () => {
@@ -27,7 +26,7 @@ const DashboardOpp = () => {
     <>
         <div className="dashboard-container">
           <div className="opp-container">
-            <Table title="Opportunities" btn="Add Opportunity" columns={OppColumns} data={OppData} />
+            {/* <Table title="Opportunities" btn="Add Opportunity" columns={OppColumns} data={OppData} /> */}
           </div>
         </div>
     </>

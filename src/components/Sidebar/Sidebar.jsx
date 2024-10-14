@@ -10,14 +10,13 @@ import { Link } from "react-router-dom";
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      {/* Logo Section */}
+      
       <div className="sidebar-logo">
         <Link to="">
           <img src={logo} alt="Logo" className="dashboard-logo" />
         </Link>
       </div>
 
-      {/* Navigation Items  */}
       <nav className="sidebar-nav">
         <ul>
           <li>

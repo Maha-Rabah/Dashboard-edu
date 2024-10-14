@@ -1,4 +1,4 @@
-import Table from '../../../components/Table/Table'
+// import Table from '../../../components/Table/Table'
 import sampleBlog from '../../../assets/sampleBlog.png'
 import './dashboardBlog.css'
 
@@ -21,7 +21,7 @@ const BlogData = [
     <>
     <div className="dashboard-container">
       <div className="blog-container">
-        <Table title="Blog" btn="Add Blog" columns={BlogColumns} data={BlogData} />
+        {/* <Table title="Blog" btn="Add Blog" columns={BlogColumns} data={BlogData} /> */}
       </div>
     </div>
 </>
